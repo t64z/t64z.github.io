@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymGuide — Learn the Right Way to Train</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* --- CARD ANIMATION --- */
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    /* --- FADE IN ANIMATION --- */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- IMAGE STYLE --- */
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar fade-in">
+    <h1 class="logo">GymGuide</h1>
+    <nav>
+      <ul>
+        <li><a href="#workouts">Start working out</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <h2>Train Smart. Stay Consistent. Transform.</h2>
+      <p>Learn how to gym the right way — build strength, confidence, and lifelong fitness habits.</p>
+      <a href="#join" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section id="about" class="about fade-in">
+    <h2>About GymGuide</h2>
+    <p>
+      GymGuide is your go-to place for learning how to gym the right way. 
+      Whether you're a beginner or have been lifting for a while, 
+      we’ll help you master form, structure effective routines, and stay motivated.
+    </p>
+  </section>
+
+  <section id="workouts" class="workouts fade-in">
+    <h2>Workout Plans</h2>
+    <div class="cards">
+
+      <a href="beginner.html" class="card fade-in">
+        <h3>Beginner Basics</h3>
+        <p>Learn proper form and foundational lifts to start your journey safely and effectively.</p>
+      </a>
+
+      <a href="strength.html" class="card fade-in">
+        <h3>Strength Builder</h3>
+        <p>Increase your strength with progressive overload and smart training splits.</p>
+      </a>
+
+      <a href="endurance.html" class="card fade-in">
+        <h3>Endurance Focus</h3>
+        <p>Combine weights and cardio for a balanced approach to fitness and stamina.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="nutrition" class="nutrition fade-in">
+    <h2>Nutrition Tips</h2>
+    <p>
+      Training is only half the battle — nutrition fuels your progress. 
+      Discover how to eat for your goals: muscle gain, fat loss, or performance.
+    </p>
+  </section>
+
+  <section id="join" class="join fade-in">
+    <h2>Start Your Fitness Journey Today</h2>
+    <p>Join our free beginner’s program and get step-by-step guidance to train smarter.</p>
+    <a href="#" class="btn">Join Now</a>
+  </section>
+
+  <footer class="fade-in">
+    <p>© 2025 GymGuide. Train Smart, Stay Consistent.</p>
+  </footer>
+</body>
+</html>
